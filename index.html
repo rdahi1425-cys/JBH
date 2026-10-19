@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>جمال بكر حريري للاستشارات الهندسية</title>
+<meta name="description" content="مكتب المهندس جمال بكر حريري للاستشارات الهندسية – مكة المكرمة منذ 2002م: دراسات وتصاميم، إشراف على التنفيذ، هندسة النقل، ومختبر بيئي معتمد.">
+<link rel="icon" href="assets/img/emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#9c4040; --maroon-dk:#7b2f2f; --maroon-lt:#d58f8f;
+  --gold:#cfc28f; --gold-dk:#a8995e; --sand:#f5f1e4; --sand-2:#ebe4cc;
+  --ink:#2b1c1c; --muted:#6f6464; --line:#ece7e2; --bg:#ffffff;
+  --green:#2f7d32; --green-dk:#1d5a21; --green-lt:#e9f4ea;
+  --accent:var(--maroon);
+  --radius:22px; --shadow:0 18px 50px -24px rgba(60,20,20,.35);
+  --hfont:"Alexandria",system-ui,sans-serif; --bfont:"IBM Plex Sans Arabic","Alexandria",system-ui,sans-serif;
+  --chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='40' viewBox='0 0 56 40'%3E%3Cpath d='M8 26 L28 10 L48 26 L48 32 L28 16 L8 32Z' fill='none' stroke='%23cfc28f' stroke-width='1.4' opacity='.55'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--bfont);color:var(--ink);background:var(--bg);line-height:1.8;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+h1,h2,h3,h4{font-family:var(--hfont);line-height:1.35;font-weight:700}
+.wrap{width:min(1240px,100% - 32px);margin-inline:auto}
+.lab{--accent:var(--green)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 30px;border-radius:999px;border:2px solid var(--accent);color:var(--accent);font-family:var(--hfont);font-weight:600;font-size:16px;transition:.25s;background:transparent;white-space:nowrap}
+.btn:hover{background:var(--accent);color:#fff}
+.btn.solid{background:var(--accent);color:#fff}
+.btn.solid:hover{background:transparent;color:var(--accent)}
+.btn.light{border-color:#fff;color:#fff}
+.btn.light:hover{background:#fff;color:var(--maroon)}
+.btn svg{width:18px;height:18px}
+
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:.3s}
+header.site.scrolled{border-color:var(--line);box-shadow:0 8px 30px -22px rgba(0,0,0,.35)}
+.hbar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:88px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand img{width:54px;height:54px}
+.brand b{display:block;font-family:var(--hfont);font-size:15px;font-weight:700;line-height:1.3}
+.brand small{display:block;font-size:11.5px;color:var(--muted);line-height:1.3}
+nav.main{display:flex;align-items:center;gap:4px}
+nav.main a{padding:9px 14px;border-radius:999px;color:#7a7070;font-family:var(--hfont);font-size:15.5px;font-weight:400;transition:.2s;position:relative}
+nav.main a:hover{color:var(--ink)}
+nav.main a.active{color:var(--ink);font-weight:600}
+nav.main a.active::after{content:"";position:absolute;inset-inline:14px;bottom:2px;height:2px;border-radius:2px;background:var(--gold)}
+nav.main a.contact-link{border:2px solid var(--maroon);color:var(--maroon);font-weight:600;margin-inline-start:8px;padding:9px 22px}
+nav.main a.contact-link:hover,nav.main a.contact-link.active{background:var(--maroon);color:#fff}
+nav.main a.contact-link.active::after{display:none}
+.login{border:2px solid var(--accent);color:var(--accent);border-radius:999px;padding:9px 24px;font-family:var(--hfont);font-weight:600;font-size:15px;transition:.2s}
+.login:hover{background:var(--accent);color:#fff}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);align-items:center;justify-content:center}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:.25s}
+.burger span::before,.burger span::after{content:"";position:absolute;inset-inline:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{top:0;transform:rotate(45deg)}
+.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
+
+/* ---------- generic ---------- */
+section{padding:96px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold-dk);font-family:var(--hfont);font-weight:600;font-size:14.5px;letter-spacing:.2px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--gold)}
+.sec-head{text-align:center;margin-bottom:54px}
+.sec-head h2{font-size:clamp(34px,5vw,58px);font-weight:800;color:var(--ink);margin-top:6px}
+.sec-head p{color:var(--muted);max-width:640px;margin:10px auto 0;font-size:16.5px}
+.lab .sec-head h2{color:var(--green-dk)}
+.squiggle{display:block;margin:6px auto 0;width:230px;height:22px}
+.pattern{background-image:var(--chev);background-size:56px 40px}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:calc(100vh - 88px);display:grid;align-items:center;padding:60px 0 90px;overflow:hidden;color:#fff;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-2;background:center/cover no-repeat;transform:scale(1.06);animation:slowzoom 18s ease-out forwards}
+@keyframes slowzoom{to{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(270deg,rgba(123,47,47,.0) 45%,rgba(123,47,47,.25) 100%)}
+.hero::after{content:"";display:none;position:absolute;inset-inline:0;bottom:0;height:110px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='40' viewBox='0 0 56 40'%3E%3Cpath d='M8 26 L28 10 L48 26 L48 32 L28 16 L8 32Z' fill='none' stroke='%23ffffff' stroke-width='1.4' opacity='.35'/%3E%3C/svg%3E");background-size:56px 40px;mask:linear-gradient(transparent,#000);-webkit-mask:linear-gradient(transparent,#000)}
+.hero{background:#7b2f2f}
+.hero .bg.mk{left:0;right:auto;width:60%;background:url(assets/img/makkah.jpg) center 22%/cover no-repeat;animation:none;transform:none;-webkit-mask-image:linear-gradient(90deg,#000 55%,transparent 100%);mask-image:linear-gradient(90deg,#000 55%,transparent 100%)}
+.hero .skyline{position:absolute;inset-inline:0;bottom:0;width:100%;height:clamp(240px,52vh,520px);z-index:-1;pointer-events:none}
+.hero{padding-bottom:120px}
+.stat-strip{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:24px;box-shadow:var(--shadow);margin-top:-58px;position:relative;z-index:3;border:1px solid var(--line)}
+.stat-strip .stat{padding:26px 16px;text-align:center;border-inline-end:1px solid var(--line)}
+.stat-strip .stat:last-child{border:0}
+.stat-strip .stat b{display:block;font-family:var(--hfont);font-size:clamp(28px,3vw,40px);font-weight:800;color:var(--maroon);line-height:1.2}
+.stat-strip .stat span{color:var(--muted);font-size:14.5px}
+.hero-grid{grid-template-columns:1fr!important}
+.hero-grid > div{max-width:720px;margin-inline-start:0}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(34px,5.4vw,66px);font-weight:800;line-height:1.25}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:clamp(16px,1.6vw,19px);opacity:.92;margin:22px 0 34px;max-width:620px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn.solid{--accent:#fff;color:var(--maroon)}
+.hero .btn.solid:hover{background:transparent;color:#fff;border-color:#fff}
+.stat-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(12px);border-radius:28px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:0}
+.stat{padding:20px 14px;text-align:center}
+.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid rgba(255,255,255,.2)}
+.stat:nth-child(odd){border-inline-end:1px solid rgba(255,255,255,.2)}
+.stat b{display:block;font-family:var(--hfont);font-size:clamp(28px,3vw,40px);font-weight:800;color:var(--gold);line-height:1.2}
+.stat span{font-size:14px;opacity:.88}
+.badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:999px}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+
+/* ---------- intro / about strip ---------- */
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.intro-media{position:relative;height:520px}
+.intro-media .m1{position:absolute;inset-inline-start:0;top:0;width:68%;height:82%;border-radius:var(--radius);object-fit:cover;box-shadow:var(--shadow)}
+.intro-media .m2{position:absolute;inset-inline-end:0;bottom:0;width:54%;height:56%;border-radius:var(--radius);object-fit:cover;border:8px solid #fff;box-shadow:var(--shadow)}
+.intro-media .tag{position:absolute;inset-inline-end:6%;top:8%;background:var(--maroon);color:#fff;border-radius:20px;padding:20px 24px;text-align:center;box-shadow:var(--shadow)}
+.intro-media .tag b{font-family:var(--hfont);font-size:40px;display:block;line-height:1.1;color:var(--gold)}
+.intro-media .tag span{font-size:13.5px}
+.intro-text h2{font-size:clamp(30px,3.6vw,46px);margin:10px 0 18px}
+.intro-text p{color:var(--muted);font-size:16.5px;margin-bottom:16px}
+.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 32px}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-size:15px}
+.checks li::before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--sand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%239c4040' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat;margin-top:3px}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px 26px;text-align:center;display:flex;flex-direction:column;align-items:center;transition:.35s;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;inset:auto 0 0 0;height:4px;background:var(--accent);transform:scaleX(0);transition:.35s}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.svc:hover::before{transform:scaleX(1)}
+.svc .pic{width:170px;height:170px;border-radius:50%;overflow:hidden;margin-bottom:22px;background:var(--sand);box-shadow:0 14px 30px -18px rgba(0,0,0,.5)}
+.svc .pic img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.svc:hover .pic img{transform:scale(1.08)}
+.svc small{color:var(--maroon-lt);font-family:var(--hfont);font-weight:500;font-size:14px}
+.lab .svc small{color:#58a05c}
+.svc h3{font-size:21px;color:var(--maroon);margin:4px 0 10px}
+.lab .svc h3{color:var(--green)}
+.svc p{font-size:14.5px;color:var(--muted);flex:1}
+.svc .more{margin-top:18px;font-family:var(--hfont);font-weight:600;font-size:14.5px;color:var(--accent);display:inline-flex;gap:6px;align-items:center}
+.svc .more svg{width:16px;transition:.25s}
+.svc:hover .more svg{transform:translateX(-4px)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:40px}
+.chip{border:1px solid var(--sand-2);background:var(--sand);color:var(--ink);padding:8px 18px;border-radius:999px;font-size:14.5px;font-family:var(--hfont)}
+
+/* ---------- projects ---------- */
+.filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:-24px 0 40px}
+.filters button{padding:9px 22px;border-radius:999px;border:1px solid var(--line);font-family:var(--hfont);font-size:15px;color:var(--muted);transition:.2s}
+.filters button.on{background:var(--maroon);border-color:var(--maroon);color:#fff}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.35s}
+.pcard:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.pcard .ph{position:relative;aspect-ratio:16/10;overflow:hidden;cursor:pointer;background:var(--sand)}
+.pcard .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.pcard .ph .ov{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,rgba(123,47,47,.25),rgba(80,25,25,.82));opacity:0;transition:.35s}
+.pcard .ph .ov .btn{transform:translateY(14px);transition:.35s;border-color:#fff;color:#fff;background:rgba(255,255,255,.08);backdrop-filter:blur(4px)}
+.pcard .ph .ov .btn:hover{background:#fff;color:var(--maroon)}
+.pcard .ph:hover img,.pcard .ph.active img{transform:scale(1.08)}
+.pcard .ph:hover .ov,.pcard .ph.active .ov{opacity:1}
+.pcard .ph:hover .ov .btn,.pcard .ph.active .ov .btn{transform:none}
+.pcard .cat{position:absolute;top:14px;inset-inline-start:14px;background:rgba(255,255,255,.94);color:var(--maroon);font-family:var(--hfont);font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:999px}
+.pcard .tap-hint{position:absolute;bottom:12px;inset-inline-end:12px;background:rgba(0,0,0,.45);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px;display:none}
+.pcard .body{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
+.pcard h3{font-size:20.5px;line-height:1.5;margin-bottom:8px}
+.pcard .meta{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--muted);font-size:14px;margin-top:auto;padding-top:14px;border-top:1px dashed var(--line)}
+.pcard .meta span{display:inline-flex;gap:6px;align-items:center}
+.pcard .meta svg{width:15px;height:15px;color:var(--gold-dk)}
+.pcard .client{color:var(--maroon);font-size:14.5px;margin-bottom:12px}
+.center{text-align:center;margin-top:46px}
+
+/* ---------- clients ---------- */
+.clients{background:var(--sand)}
+.marquee{overflow:hidden;mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:22px;width:max-content;animation:scroll 60s linear infinite;padding:8px 0}
+.track.rev{animation-direction:reverse;margin-top:22px}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(50%)}}
+.logo-tile{width:200px;height:130px;background:#fff;border-radius:18px;display:grid;place-items:center;padding:18px;flex-shrink:0;transition:.3s;border:1px solid rgba(0,0,0,.04)}
+.logo-tile img{max-height:94px;max-width:100%;object-fit:contain;filter:grayscale(.15);transition:.3s}
+.logo-tile:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.logo-tile:hover img{filter:none}
+.logo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.logo-grid .logo-tile{width:auto}
+
+/* ---------- page banner ---------- */
+.banner{position:relative;padding:110px 0 90px;color:#fff;overflow:hidden;isolation:isolate;text-align:center}
+.banner .bg{position:absolute;inset:0;background:center/cover;z-index:-2}
+.banner::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(80,25,25,.7),rgba(123,47,47,.9));z-index:-1}
+.banner h1{font-size:clamp(34px,5vw,60px);font-weight:800}
+.banner p{opacity:.9;max-width:680px;margin:12px auto 0;font-size:17px}
+.crumbs{display:flex;justify-content:center;gap:8px;font-size:14px;opacity:.85;margin-bottom:12px}
+.crumbs a:hover{text-decoration:underline}
+
+/* ---------- project detail ---------- */
+.pd-hero{position:relative;height:min(72vh,640px);overflow:hidden;isolation:isolate;color:#fff;display:flex;align-items:flex-end}
+.pd-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.pd-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(60,18,18,.88));z-index:-1}
+.pd-hero .wrap{padding-bottom:54px}
+.pd-hero h1{font-size:clamp(28px,4.4vw,54px);font-weight:800;max-width:900px}
+.pd-hero .crumbs{justify-content:flex-start}
+.pd-hero .cat{display:inline-block;background:var(--gold);color:var(--ink);font-family:var(--hfont);font-weight:600;font-size:13.5px;padding:5px 14px;border-radius:999px;margin-bottom:14px}
+.pd-body{display:grid;grid-template-columns:1fr 360px;gap:50px;align-items:start}
+.pd-body h2{font-size:30px;margin-bottom:16px}
+.pd-body .desc p{color:var(--muted);font-size:17px;margin-bottom:14px}
+.facts{background:var(--sand);border-radius:var(--radius);padding:28px;position:sticky;top:110px}
+.facts h3{font-size:20px;margin-bottom:12px;color:var(--maroon)}
+.fact{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--sand-2)}
+.fact:last-of-type{border:0}
+.fact .ic{flex:0 0 42px;height:42px;border-radius:12px;background:#fff;display:grid;place-items:center;color:var(--maroon)}
+.fact .ic svg{width:20px;height:20px}
+.fact small{display:block;color:var(--muted);font-size:13px}
+.fact b{font-family:var(--hfont);font-weight:600;font-size:16px}
+.facts .btn{width:100%;justify-content:center;margin-top:18px}
+.gallery{display:grid;grid-auto-flow:dense;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;margin-top:40px}
+.gallery button{border-radius:16px;overflow:hidden;position:relative}
+.gallery button:first-child{grid-column:span 2;grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gallery button:hover img{transform:scale(1.06)}
+.pd-nav{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:70px}
+.pd-nav a{display:flex;gap:16px;align-items:center;border:1px solid var(--line);border-radius:18px;padding:14px;transition:.25s}
+.pd-nav a:hover{border-color:var(--maroon);box-shadow:var(--shadow)}
+.pd-nav a img{width:96px;height:72px;border-radius:12px;object-fit:cover}
+.pd-nav a small{color:var(--muted);display:block;font-size:13px}
+.pd-nav a b{font-family:var(--hfont);font-size:15.5px;font-weight:600;line-height:1.5}
+.pd-nav a.next{flex-direction:row-reverse;text-align:left}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(20,8,8,.94);display:none;align-items:center;justify-content:center;padding:60px 70px}
+.lb.on{display:flex}
+.lb img{max-height:100%;max-width:100%;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lb button{position:absolute;color:#fff;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;font-size:26px}
+.lb button:hover{background:rgba(255,255,255,.25)}
+.lb .x{top:16px;left:16px}.lb .pv{right:14px;top:50%;translate:0 -50%}.lb .nx{left:14px;top:50%;translate:0 -50%}
+.lb .cnt{position:absolute;bottom:18px;color:#fff;opacity:.7;font-size:14px}
+
+/* ---------- about page ---------- */
+.vm{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.vm .card{border-radius:var(--radius);padding:40px;position:relative;overflow:hidden}
+.vm .card.v{background:var(--maroon);color:#fff}
+.vm .card.m{background:var(--sand)}
+.vm .card .ic{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;margin-bottom:20px;background:rgba(255,255,255,.14)}
+.vm .card.m .ic{background:#fff;color:var(--maroon)}
+.vm .card .ic svg{width:30px;height:30px}
+.vm .card h3{font-size:28px;margin-bottom:10px;color:var(--gold)}
+.vm .card.m h3{color:var(--maroon)}
+.vm .card p{font-size:18.5px;font-family:var(--hfont);font-weight:400;line-height:1.9}
+.vm .card::after{content:"";position:absolute;inset-inline-end:-20px;bottom:-20px;width:200px;height:140px;background-image:var(--chev);background-size:56px 40px;opacity:.8}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.value{background:#fff;border-radius:20px;padding:30px 28px;border:1px solid var(--line);position:relative;transition:.3s}
+.value:hover{border-color:var(--gold);transform:translateY(-4px)}
+.value .n{font-family:var(--hfont);font-size:46px;font-weight:800;color:var(--sand-2);position:absolute;top:12px;inset-inline-end:22px;line-height:1}
+.value h4{font-size:21px;color:var(--maroon);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.value h4::after{content:"";width:28px;height:2px;background:var(--gold)}
+.value p{color:var(--muted);font-size:15.5px}
+.goals{position:relative;border-radius:30px;overflow:hidden;padding:60px;isolation:isolate;color:#fff}
+.goals .bg{position:absolute;inset:0;background:center/cover;z-index:-2}
+.goals::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(123,47,47,.95),rgba(156,64,64,.72));z-index:-1}
+.goals-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.goals h2{font-size:clamp(40px,5vw,64px);font-weight:800}
+.goals ol{list-style:none;display:grid;gap:14px;counter-reset:g}
+.goals li{counter-increment:g;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:16px 20px;display:flex;gap:16px;align-items:center;font-size:16.5px;backdrop-filter:blur(6px)}
+.goals li::before{content:counter(g,arabic-indic);font-family:var(--hfont);font-weight:800;font-size:22px;color:var(--ink);background:var(--gold);flex:0 0 44px;height:44px;border-radius:12px;display:grid;place-items:center}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.member{text-align:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 22px;transition:.3s}
+.member:hover{box-shadow:var(--shadow);transform:translateY(-5px)}
+.member .av{width:138px;height:138px;border-radius:50%;margin:0 auto 18px;overflow:hidden;border:5px solid var(--sand);outline:2px solid var(--gold);outline-offset:3px}
+.member .av img{width:100%;height:100%;object-fit:cover;object-position:top}
+.member small{color:var(--gold-dk);font-family:var(--hfont);font-size:13.5px}
+.member h4{font-size:19px;color:var(--maroon);margin:2px 0 8px}
+.member p{font-size:14px;color:var(--muted);line-height:1.75}
+.org{display:flex;flex-direction:column;align-items:center;gap:0}
+.org .node{background:var(--maroon);color:#fff;font-family:var(--hfont);font-weight:600;padding:14px 30px;border-radius:14px;font-size:16px;text-align:center}
+.org .node.g{background:var(--gold);color:var(--ink)}
+.org .node.s{background:#fff;border:2px solid var(--maroon);color:var(--maroon)}
+.org .v{width:2px;height:30px;background:var(--gold)}
+.org .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;position:relative;padding-top:30px}
+.org .row::before{content:"";position:absolute;top:0;inset-inline:12%;height:2px;background:var(--gold)}
+.org .row > div{position:relative}
+.org .row > div::before{content:"";position:absolute;top:-30px;left:50%;width:2px;height:30px;background:var(--gold)}
+.exp{columns:2;column-gap:40px}
+.exp li{break-inside:avoid;list-style:none;padding:12px 0 12px;border-bottom:1px dashed var(--sand-2);display:flex;gap:12px;font-size:15.5px;color:#4a3e3e}
+.exp li::before{content:"";flex:0 0 10px;height:10px;margin-top:9px;background:var(--gold);transform:rotate(45deg)}
+.cert{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;background:#fff;border-radius:var(--radius);padding:30px 34px;border:1px solid var(--line);box-shadow:var(--shadow);margin-top:-60px;position:relative;z-index:2}
+.cert .seal{width:86px;height:86px;border-radius:50%;background:var(--green-lt);color:var(--green);display:grid;place-items:center}
+.cert .seal svg{width:40px}
+.cert h3{font-size:22px}
+.cert p{color:var(--muted)}
+
+/* ---------- contact page ---------- */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}
+.cinfo{background:var(--maroon);color:#fff;border-radius:28px;padding:40px 36px;position:relative;overflow:hidden}
+.cinfo::after{content:"";position:absolute;inset-inline:0;bottom:0;height:120px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='40' viewBox='0 0 56 40'%3E%3Cpath d='M8 26 L28 10 L48 26 L48 32 L28 16 L8 32Z' fill='none' stroke='%23cfc28f' stroke-width='1.4' opacity='.5'/%3E%3C/svg%3E");background-size:56px 40px;mask:linear-gradient(transparent,#000);-webkit-mask:linear-gradient(transparent,#000)}
+.cinfo h2{font-size:30px;margin-bottom:8px}
+.cinfo > p{opacity:.85;margin-bottom:26px}
+.citem{display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.citem .ic{flex:0 0 50px;height:50px;border-radius:14px;background:rgba(255,255,255,.12);display:grid;place-items:center}
+.citem .ic svg{width:22px;height:22px;color:var(--gold)}
+.citem small{display:block;opacity:.7;font-size:13px}
+.citem b{font-family:var(--hfont);font-weight:500;font-size:16.5px;direction:ltr;unicode-bidi:plaintext}
+.socials{display:flex;gap:10px;margin-top:26px;position:relative;z-index:1}
+.socials a{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);transition:.25s}
+.socials a:hover{background:var(--gold);color:var(--ink)}
+.socials svg{width:18px;height:18px}
+form.cform{background:#fff;border:1px solid var(--line);border-radius:28px;padding:40px;box-shadow:var(--shadow)}
+form.cform h2{font-size:28px;margin-bottom:6px}
+form.cform > p{color:var(--muted);margin-bottom:26px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-family:var(--hfont);font-size:14.5px;font-weight:500}
+.field input,.field select,.field textarea{font:inherit;font-size:15.5px;border:1.5px solid var(--line);border-radius:14px;padding:13px 16px;background:#fcfbf9;transition:.2s;color:var(--ink);width:100%}
+.field textarea{min-height:150px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--maroon);background:#fff;box-shadow:0 0 0 4px rgba(156,64,64,.1)}
+.dept{display:flex;gap:10px;flex-wrap:wrap}
+.dept label{cursor:pointer;position:relative}
+.dept input{position:absolute;opacity:0;pointer-events:none;width:1px!important;height:1px;inset:0}
+.dept span{display:inline-block;padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);font-size:14.5px;transition:.2s}
+.dept input:checked + span{background:var(--maroon);border-color:var(--maroon);color:#fff}
+.dept input:focus-visible + span{outline:2px solid var(--gold)}
+.sent{display:none;margin-top:16px;background:var(--green-lt);color:var(--green-dk);padding:14px 18px;border-radius:14px}
+
+/* ---------- envlab ---------- */
+.lab-hero{position:relative;min-height:calc(100vh - 88px);display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden;isolation:isolate;padding:80px 0}
+.lab-hero .bg{position:absolute;inset:0;background:radial-gradient(1200px 600px at 70% 20%,#7fcf8a 0%,transparent 60%),radial-gradient(900px 600px at 10% 90%,#1d5a21 0%,transparent 60%),linear-gradient(135deg,#2f7d32,#14431a);z-index:-2}
+.lab-hero .leaves{position:absolute;inset:0;z-index:-1;opacity:.14;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M20 90 C20 50 60 30 100 30 C100 70 70 100 20 90Z M20 90 L80 50' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E");background-size:120px}
+.lab-hero h1{font-size:clamp(28px,4.4vw,54px);font-weight:800;max-width:1000px;margin:0 auto;line-height:1.5;text-shadow:0 4px 30px rgba(0,0,0,.2)}
+.lab-hero p{max-width:640px;margin:22px auto 34px;opacity:.9;font-size:17.5px}
+.lab-hero .btn{--accent:#fff}
+.lab-hero .btn.solid{background:#fff;color:var(--green-dk)}
+.lab-hero .btn.solid:hover{background:transparent;color:#fff}
+.lab-hero{text-align:start;place-items:center stretch}
+.lab-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.lab-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:7px 16px;border-radius:999px;font-family:var(--hfont);font-size:14.5px;backdrop-filter:blur(6px)}
+.lab-tag svg{width:18px}
+.lab-hero .lab-copy h1{font-size:clamp(34px,4.6vw,60px);max-width:none;margin:22px 0 0;line-height:1.35}
+.lab-hero .lab-copy h1 em{font-style:normal;color:#bfe8c2}
+.lab-hero .lab-copy p{margin:20px 0 30px;max-width:560px;font-size:17.5px;opacity:.9}
+.lab-actions{display:flex;gap:12px;flex-wrap:wrap}
+.lab-contact{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;padding-top:24px;border-top:1px solid rgba(255,255,255,.2)}
+.lab-contact a{display:inline-flex;align-items:center;gap:10px;font-size:15px;opacity:.92;direction:ltr}
+.lab-contact a svg{width:20px;height:20px;color:#bfe8c2}
+.lab-tiles{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.lab-tile{position:relative;overflow:hidden;border-radius:24px;min-height:200px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(160deg,rgba(255,255,255,.18),rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(8px);transition:.35s;isolation:isolate}
+.lab-tile:nth-child(2){transform:translateY(28px)}.lab-tile:nth-child(4){transform:translateY(28px)}
+.lab-tile:hover{border-color:#fff}
+.lab-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:.6s}
+.lab-tile::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,50,20,.1) 20%,rgba(12,45,16,.85))}
+.lab-tile:hover img{transform:scale(1.08)}
+.lab-tile .ico{position:absolute;top:16px;inset-inline-start:16px;width:46px;height:46px;border-radius:14px;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:22px;backdrop-filter:blur(6px)}
+.lab-tile b{font-family:var(--hfont);font-size:19px}
+.lab-tile small{opacity:.85;font-size:13.5px}
+.flask{width:110px;height:110px;margin:0 auto 26px;border-radius:30px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);display:grid;place-items:center;backdrop-filter:blur(6px)}
+.flask svg{width:56px;color:#fff}
+.lab-pills{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:40px}
+.lab-pills span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:8px 18px;border-radius:999px;font-size:14.5px}
+.lab .btn{--accent:var(--green)}
+.lab .lab-hero .btn,.lab .slide .txt .btn{--accent:#fff}
+.lab .lab-hero .btn.solid{background:#fff;color:var(--green-dk)}
+.lab .lab-hero .btn.solid:hover{background:transparent;color:#fff}
+.lab .lab-hero .btn:not(.solid):hover{background:#fff;color:var(--green-dk)}
+.about-lab{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.collage{position:relative;height:500px}
+.collage img{position:absolute;border-radius:22px;object-fit:cover;box-shadow:var(--shadow);background:var(--green-lt)}
+.collage .a{inset-inline-start:0;top:0;width:58%;height:62%}
+.collage .b{inset-inline-end:0;top:14%;width:44%;height:46%;border:7px solid #fff}
+.collage .c{inset-inline-start:16%;bottom:0;width:58%;height:42%;border:7px solid #fff}
+.about-lab h2{font-size:clamp(30px,3.6vw,46px);margin:8px 0 16px;color:var(--green-dk)}
+.about-lab p{color:var(--muted);font-size:16.5px;margin-bottom:14px}
+.lab .checks li::before{background-color:var(--green-lt);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%232f7d32' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.lab .eyebrow{color:var(--green)}
+.lab .eyebrow::before{background:#7fbf83}
+.slider{position:relative;border-radius:30px;overflow:hidden;height:min(70vh,600px);background:#123}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .9s;display:flex;align-items:flex-end}
+.slide.on{opacity:1}
+.slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slide::before{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(10,40,14,.85) 0%,rgba(10,40,14,.35) 55%,transparent);z-index:1}
+.slide .txt{position:relative;z-index:2;color:#fff;padding:50px 60px;max-width:620px}
+.slide .txt small{color:#a6dcaa;font-family:var(--hfont)}
+.slide .txt h3{font-size:clamp(28px,3.4vw,44px);margin:6px 0 12px}
+.slide .txt p{opacity:.9;margin-bottom:22px}
+.slide .txt .btn{--accent:#fff}
+.slider .arr{position:absolute;top:50%;translate:0 -50%;z-index:3;width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;display:grid;place-items:center;backdrop-filter:blur(6px)}
+.slider .arr:hover{background:rgba(255,255,255,.35)}
+.slider .arr svg{width:22px}
+.slider .arr.p{right:20px}.slider .arr.n{left:20px}
+.dots{position:absolute;bottom:22px;left:50%;translate:-50% 0;z-index:3;display:flex;gap:8px}
+.dots button{width:10px;height:10px;border-radius:999px;background:rgba(255,255,255,.5);transition:.3s}
+.dots button.on{width:30px;background:#fff}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 24px;position:relative;counter-increment:s}
+.step::before{content:counter(s,arabic-indic);position:absolute;top:-18px;inset-inline-start:24px;width:40px;height:40px;border-radius:12px;background:var(--green);color:#fff;font-family:var(--hfont);font-weight:700;display:grid;place-items:center;font-size:18px}
+.step .ic{color:var(--green);margin:10px 0 12px}
+.step .ic svg{width:34px;height:34px}
+.step h4{font-size:19px;margin-bottom:6px}
+.step p{font-size:14.5px;color:var(--muted)}
+.lab-band{background:var(--green-lt)}
+
+/* ---------- footer ---------- */
+footer.site{background:#f6f5f3;padding:70px 0 0;margin-top:0}
+.fgrid4{display:grid;grid-template-columns:1.3fr 2fr 1fr;gap:50px}
+footer h4{font-size:20px;font-weight:600;margin-bottom:16px}
+footer .links{list-style:none;display:grid;gap:6px}
+footer .links a{color:var(--maroon);font-size:15.5px;transition:.2s}
+footer .links a:hover{color:var(--ink);padding-inline-start:4px}
+footer .about-f p{color:var(--maroon);font-size:15.5px;line-height:1.95}
+footer .fbrand{display:flex;gap:14px;align-items:center;margin-bottom:16px}
+footer .fbrand img{width:200px}
+.fsocial{display:flex;gap:10px}
+.fsocial a{width:48px;height:48px;border-radius:50%;background:#fff;display:grid;place-items:center;color:#3b5998;box-shadow:0 6px 18px -10px rgba(0,0,0,.3);transition:.25s}
+.fsocial a:hover{background:var(--maroon);color:#fff;transform:translateY(-3px)}
+.fsocial svg{width:18px;height:18px}
+.copy{margin-top:50px;border-top:1px solid #e6e2dd;padding:18px 0;font-size:14px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .team{grid-template-columns:repeat(2,1fr)}
+  .logo-grid{grid-template-columns:repeat(4,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:40px}
+}
+@media (max-width:1020px){
+  .burger{display:flex}
+  nav.main{position:fixed;inset:88px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;padding:14px 16px 22px;gap:2px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px -20px rgba(0,0,0,.3);transform:translateY(-12px);opacity:0;pointer-events:none;transition:.25s}
+  .menu-open nav.main{transform:none;opacity:1;pointer-events:auto}
+  nav.main a{padding:12px 16px;font-size:16.5px}
+  nav.main a.active::after{display:none}
+  nav.main a.active{background:var(--sand)}
+  nav.main a.contact-link{margin:8px 0 0;text-align:center}
+  .hbar .login{display:none}
+  nav.main .login-m{display:block!important;text-align:center;border:2px solid var(--accent);color:var(--accent);margin-top:8px}
+  .lab-grid{grid-template-columns:1fr}
+  .hero-grid,.intro-grid,.pd-body,.contact-grid,.about-lab,.goals-grid,.vm{grid-template-columns:1fr}
+  .proj-grid{grid-template-columns:repeat(2,1fr)}
+  .facts{position:static;order:-1}
+  .intro-media{height:440px}
+}
+@media (max-width:680px){
+  section{padding:70px 0}
+  .stat-strip{grid-template-columns:1fr 1fr}
+  .stat-strip .stat:nth-child(2){border-inline-end:0}
+  .stat-strip .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .lab-tile{min-height:170px;padding:16px}
+  .lab-tile .ico{width:38px;height:38px;font-size:18px;top:12px}
+  .lab-tile b{font-size:16.5px}
+  .hero{padding-bottom:110px;min-height:auto;padding-top:60px}
+  .hero .bg.mk{width:100%;background-position:center 18%;-webkit-mask-image:none;mask-image:none}
+  .hero::before{background:linear-gradient(180deg,rgba(90,30,30,.55),rgba(123,47,47,.88) 45%,#7b2f2f)}
+  .lab-tile{min-height:150px}
+  .lab-tile:nth-child(2),.lab-tile:nth-child(4){transform:none}
+  .brand small{display:none}
+  .brand b{font-size:13.5px}
+  .brand img{width:46px;height:46px}
+  .svc-grid,.proj-grid,.team,.values,.steps,.fgrid,.fgrid4{grid-template-columns:1fr}
+  .logo-grid{grid-template-columns:repeat(2,1fr)}
+  .checks{grid-template-columns:1fr}
+  .exp{columns:1}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}
+  .pd-nav{grid-template-columns:1fr}
+  .stat-card{padding:16px}
+  .goals{padding:36px 22px}
+  .slide .txt{padding:30px 26px 60px}
+  .slider .arr{display:none}
+  .intro-media{height:360px}
+  .collage{height:380px}
+  form.cform,.cinfo{padding:28px 22px}
+  .cert{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .lb{padding:60px 10px}
+  .pcard .tap-hint{display:block}
+  .pcard .ph.active .tap-hint{display:none}
+  .logo-tile{width:160px;height:110px}
+}
+@media (hover:none){.pcard .tap-hint{display:block}.pcard .ph.active .tap-hint{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="site" id="hdr">
+  <div class="wrap hbar">
+    <a href="#/" class="brand" aria-label="الرئيسية">
+      <img src="assets/img/emblem.png" alt="شعار جمال بكر حريري">
+      <span><b>جمال بكر حريري</b><small>للاستشارات الهندسية</small></span>
+    </a>
+    <nav class="main" id="nav">
+      <a href="#/" data-r="home">الرئيسية</a>
+      <a href="#/envlab" data-r="envlab">المختبر البيئي</a>
+      <a href="#/projects" data-r="projects">مشاريعنا</a>
+      <a href="#/about" data-r="about">من نحن</a>
+      <a href="#/contact?dept=jobs" data-r="jobs">انضم إلينا</a>
+      <a href="#/contact" data-r="contact" class="contact-link">تواصل معنا</a>
+      <a href="https://jbhconsultingsa.com/web/login" class="login-m" style="display:none">تسجيل الدخول</a>
+    </nav>
+    <a class="login" href="https://jbhconsultingsa.com/web/login">تسجيل الدخول</a>
+    <button class="burger" id="burger" aria-label="القائمة"><span></span></button>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="site">
+  <div class="wrap fgrid4">
+    <div>
+      <h4>روابط مفيدة</h4>
+      <ul class="links">
+        <li><a href="#/">الرئيسية</a></li>
+        <li><a href="#/about">من نحن</a></li>
+        <li><a href="#/projects">مشاريعنا</a></li>
+        <li><a href="#/envlab">المختبر البيئي</a></li>
+        <li><a href="#/about#services">خدماتنا</a></li>
+        <li><a href="#/contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div class="about-f">
+      <h4>من نحن</h4>
+      <p>مكتب المهندس جمال بكر حريري للاستشارات الهندسية، أحد المكاتب الرائدة في مكة المكرمة منذ عام 2002م. نرافق عملاءنا من الفكرة إلى التسليم: دراسات وتصاميم، إشراف على التنفيذ، هندسة نقل وحركة مرور، ورخص السكن الجماعي والتجاري، إلى جانب مختبر بيئي لتحليل المياه والتربة والهواء. نستند إلى خبرة مؤسسنا الممتدة لأكثر من 45 عاماً في العمل الهندسي، وإلى مشاريع حكومية وخاصة تتجاوز قيمتها 3 مليارات ريال سعودي.</p>
+    </div>
+    <div>
+      <h4>تابعنا</h4>
+      <div class="fsocial">
+        <a href="#" aria-label="فيسبوك"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.5 2 10.6 3.5 10.6 6v2H8.5v3h2.1v11H14V11h2.6l.4-3z"/></svg></a>
+        <a href="#" aria-label="إكس" style="color:#1d9bf0"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.7 8 10.3h-6.3l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.8 3h6.4l4.5 5.9L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+        <a href="#" aria-label="لينكدإن" style="color:#0a66c2"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap copy">
+    <span>جميع الحقوق محفوظة © <span id="yr"></span> شركة جمال بكر حريري للاستشارات الهندسية</span>
+    <span>مكة المكرمة – المملكة العربية السعودية</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <button class="x" aria-label="إغلاق">×</button>
+  <button class="pv" aria-label="السابق">›</button>
+  <img alt="">
+  <button class="nx" aria-label="التالي">‹</button>
+  <div class="cnt"></div>
+</div>
+
+<script>
+/* ===================== DATA ===================== */
+const IMG = (id,i)=>`assets/projects/${id}-${i}.jpg`;
+const PROJECTS = [
+  {id:"arafat-southasia",cat:"exec",title:"تشييد الخيام وأعمال تطوير البنية التحتية بمشعر عرفات",client:"شركة مطوفي حجاج جنوب آسيا",loc:"مشعر عرفات – مكة المكرمة",cost:"400,000,000",n:8,role:"خدمات استشارية للإشراف على التنفيذ",
+   desc:["أحد أكبر مشاريع المشاعر المقدسة التي أشرف عليها المكتب، ويشمل تشييد مخيمات الحجاج وتطوير البنية التحتية المساندة لها في مشعر عرفات لصالح شركة مطوفي حجاج جنوب آسيا.","تولّى فريق المكتب الإشراف الهندسي على مراحل التنفيذ ومتابعة الجودة والجدول الزمني، بما يضمن جاهزية المخيمات وخدماتها لاستقبال ضيوف الرحمن في موسم الحج."]},
+  {id:"arafat-arab",cat:"exec",title:"تشييد الخيام وأعمال تطوير البنية التحتية بمشعر عرفات",client:"شركة مطوفي حجاج الدول العربية",loc:"مشعر عرفات – مكة المكرمة",cost:"375,000,000",n:7,role:"خدمات استشارية للإشراف على التنفيذ",
+   desc:["مشروع متكامل لتشييد مخيمات حجاج الدول العربية في مشعر عرفات وتطوير بنيتها التحتية، من الممرات والمظلات إلى مرافق الضيافة والخدمات.","قدّم المكتب خدمات الإشراف الاستشاري على التنفيذ، مع متابعة ميدانية دقيقة لجودة الأعمال وسلامة الموقع خلال فترة زمنية محدودة تسبق موسم الحج."]},
+  {id:"arafat-sea",cat:"exec",title:"تشييد الخيام وأعمال تطوير البنية التحتية بمشعر عرفات",client:"شركة مطوفي حجاج دول جنوب شرق آسيا",loc:"مشعر عرفات – مكة المكرمة",cost:"130,000,000",n:7,role:"خدمات استشارية للإشراف على التنفيذ",
+   desc:["تشييد مخيمات حجاج دول جنوب شرق آسيا في مشعر عرفات وأعمال البنية التحتية المصاحبة لها من دورات مياه ومرافق خدمية وممرات مظللة.","أشرف المكتب على التنفيذ بما يحقق أعلى معايير الجودة والراحة للحجاج، ويواكب متطلبات الجهات المختصة بالمشاعر المقدسة."]},
+  {id:"arafat-iran",cat:"exec",title:"تشييد الخيام وأعمال تطوير البنية التحتية بمشعر عرفات",client:"شركة مطوفي حجاج إيران",loc:"مشعر عرفات – مكة المكرمة",cost:"30,000,000",n:8,role:"خدمات استشارية للإشراف على التنفيذ",
+   desc:["تشييد مخيمات حجاج إيران وتطوير البنية التحتية لها في مشعر عرفات، بما يشمل الخيام والممرات والمسطحات الخضراء وأنظمة التكييف.","تولّى المكتب الإشراف الاستشاري على مراحل التنفيذ وضبط الجودة حتى التسليم."]},
+  {id:"dan-plaza",cat:"exec",title:"مشروع سوق تجاري ساحة دان",client:"",loc:"حي العوالي – مكة المكرمة",cost:"60,000,000",n:7,role:"",
+   desc:["سوق تجاري حديث في حي العوالي بمكة المكرمة يضم واجهات تجارية متصلة ومواقف سيارات واسعة ومساحات خارجية منسقة.","يعكس المشروع خبرة المكتب في المشاريع التجارية متوسطة الحجم، من المتابعة الهندسية في الموقع حتى اكتمال الواجهات والمواقف."]},
+  {id:"taiseer-hotel",cat:"exec",title:"مشروع فندق التيسير",client:"",loc:"حي التيسير – مكة المكرمة",cost:"250,000,000",n:8,role:"",
+   desc:["برج فندقي بواجهات زجاجية لافتة في حي التيسير بمكة المكرمة، يضم غرفاً وأجنحة وممرات وصالات مجهزة لخدمة الزوار والمعتمرين.","تُظهر صور المشروع مراحل اكتمال الأعمال الداخلية من الغرف والممرات ودورات المياه حتى التشطيبات النهائية."]},
+  {id:"sharif-mansour-hotel",cat:"exec",title:"مشروع فندق وقف الشريف منصور",client:"",loc:"حي العزيزية – مكة المكرمة",cost:"37,000,000",n:6,role:"",
+   desc:["برج فندقي في حي العزيزية بمكة المكرمة بواجهة حجرية فاخرة وإضاءة معمارية مميزة، وبهو استقبال بتفاصيل زخرفية راقية.","رافقت فرق المكتب أعمال المشروع ميدانياً، من صب الخرسانة والأساسات وحتى التشطيبات الداخلية."]},
+  {id:"awfi-hotel",cat:"exec",title:"مشروع فندق العوفي",client:"",loc:"حي النزهة – مكة المكرمة",cost:"18,000,000",n:7,role:"",
+   desc:["برج فندقي في حي النزهة بمكة المكرمة، تابع المكتب أعماله منذ مرحلة الحفر والأساسات وحتى اكتمال الهيكل والواجهات.","يوثّق المشروع تسلسل الأعمال الإنشائية في موقع ضيق داخل نسيج عمراني قائم، وما يتطلبه ذلك من دقة في الإشراف والتنسيق."]},
+  {id:"disabled-center",cat:"exec",title:"مشروع مركز المعاقين",client:"",loc:"حي الخالدية – مكة المكرمة",cost:"20,000,000",n:6,role:"",
+   desc:["مبنى خدمي متخصص في حي الخالدية بمكة المكرمة، بواجهات حجرية ومشربيات معاصرة وممرات داخلية واسعة تراعي متطلبات الوصول الشامل.","مشروع ذو أثر مجتمعي مباشر، يجسّد رسالة المكتب في تقديم حلول هندسية تسهم في تنمية المجتمع."]},
+  {id:"elderly-home",cat:"exec",title:"مشروع دار المسنين",client:"",loc:"حي الإسكان – مكة المكرمة",cost:"1,800,000",n:6,role:"",
+   desc:["مبنى دار المسنين في حي الإسكان بمكة المكرمة، وتوثّق صوره مراحل التنفيذ من الأساسات والقواعد الخرسانية إلى الهيكل والتشطيبات الخارجية.","مشروع مجتمعي يعكس التزام المكتب بالجودة في المشاريع الصغيرة كما في الكبيرة."]},
+  {id:"yanbu-hujjaj-city",cat:"design",title:"مدينة الحجاج بينبع",client:"",loc:"ينبع",cost:"130,000,000",area:"48,000",n:5,role:"دراسة وتطوير المخطط العام",
+   desc:["مدينة متكاملة لخدمة حجاج البحر في ينبع، تضم مباني استقبال وإيواء ومواقف للحافلات وساحات وممرات مظللة بطابع معماري مستوحى من العمارة الإسلامية.","أعدّ المكتب دراسة المخطط العام وتطويره، بمساحة إجمالية تبلغ 48,000 متر مسطح."]},
+  {id:"ranyah-municipality",cat:"design",title:"مبنى بلدية محافظة رنية",client:"",loc:"محافظة رنية",cost:"22,000,000",area:"6,000",n:3,role:"دراسة وتصميم",
+   desc:["مبنى إداري لبلدية محافظة رنية بتصميم معاصر تتوسطه قبة زجاجية وواجهات مائلة، ضمن موقع عام منسق بمسطحات خضراء ومواقف واسعة.","قدّم المكتب الخدمات الهندسية والاستشارية لدراسة المبنى وتصميمه."]},
+  {id:"maysan-rural-complex",cat:"design",title:"مبنى المجمع القروي بميسان",client:"",loc:"ميسان",cost:"11,000,000",area:"4,500",n:2,role:"دراسة وتصميم",
+   desc:["مبنى المجمع القروي في ميسان بواجهات من الطوب والزجاج وقبة زجاجية مركزية، محاط بمسطحات خضراء وأشجار نخيل.","أعدّ المكتب الدراسة والتصميم، وأشرف على تنفيذ مشاريع المجمع القروي بميسان."]},
+  {id:"makkah-tourist-hotel",cat:"design",title:"فندق مكة السياحي",client:"",loc:"مكة المكرمة",cost:"450,000,000",area:"150,000",n:2,role:"دراسة وتصميم",
+   desc:["مجمع فندقي ضخم بمكة المكرمة بمساحة إجمالية تبلغ 150,000 متر مسطح، بكتل متدرجة وواجهات تجمع بين الحجر والمشربيات المعاصرة.","من أكبر التصاميم في محفظة المكتب من حيث الحجم والتكلفة التقديرية."]},
+  {id:"awda-hotel",cat:"design",title:"فندق العودة",client:"",loc:"الهجلة – مكة المكرمة",cost:"130,000,000",area:"40,000",n:2,role:"دراسة وتصميم",
+   desc:["برج فندقي منحني الواجهة في حي الهجلة بمكة المكرمة، بشرائح أفقية وزجاج عاكس يمنحه حضوراً عصرياً على خط السماء.","بمساحة إجمالية 40,000 متر مسطح وتكلفة تقديرية تبلغ 130 مليون ريال."]},
+  {id:"mina-floors",cat:"design",title:"مشروع بناء الأدوار المتكررة بمشعر منى",client:"",loc:"مشعر منى – مكة المكرمة",cost:"2,000,000",area:"570",n:1,role:"دراسة وتصميم",
+   desc:["تصميم مبنى بأدوار متكررة في مشعر منى، يستثمر المساحة المحدودة لتقديم خدمات إضافية للحجاج ضمن نطاق المخيمات.","بمساحة إجمالية 570 متراً مربعاً."]},
+  {id:"model-kitchen",cat:"design",title:"مشروع المطبخ النموذجي بالمشاعر المقدسة",client:"",loc:"المشاعر المقدسة – مكة المكرمة",cost:"1,000,000",area:"288",n:1,role:"دراسة وتصميم",
+   desc:["تصميم مطبخ نموذجي لخدمة الحجاج في المشاعر المقدسة، بكتلة عملية وواجهات معدنية تتلاءم مع بيئة المخيمات.","بمساحة إجمالية 288 متراً مربعاً وتكلفة تقديرية مليون ريال."]},
+];
+const CATS={exec:"مشاريع منفذة",design:"دراسات وتصاميم"};
+const LOGOS=[["makkah-muni","أمانة العاصمة المقدسة"],["hajj","وزارة الحج والعمرة"],["momrah","وزارة الشؤون البلدية والقروية والإسكان"],["housing","وزارة الإسكان"],["mewa","وزارة البيئة والمياه والزراعة"],["edu","وزارة التعليم"],["health","وزارة الصحة"],["justice","وزارة العدل"],["water-elec","وزارة المياه والكهرباء"],["jeddah","أمانة جدة"],["makkah-dev","هيئة تطوير منطقة مكة المكرمة"],["sgs","هيئة المساحة الجيولوجية السعودية"],["citc","هيئة الاتصالات وتقنية المعلومات"],["nwc","شركة المياه الوطنية"],["sec","الشركة السعودية للكهرباء"],["uqu","جامعة أم القرى"],["kidana","كدانة"],["jabal-omar","شركة جبل عمر للتطوير"],["umm-alqura-dev","أم القرى للتنمية والإعمار"],["hafil","حافل"],["dan","ساحة دان"],["amal","جمعية الأمل المنشود"],["dakhil","المجلس التنسيقي لمنشآت خدمة حجاج الداخل"],["arab-mutawif","شركة مطوفي حجاج الدول العربية"],["southasia-mutawif","شركة مطوفي حجاج جنوب آسيا"],["sea-mutawif","شركة مطوفي حجاج دول جنوب شرق آسيا"],["iran-mutawif","شركة مطوفي حجاج إيران"]];
+const W="https://jbhconsultingsa.com/web/image/";
+const LABIMG={micro:W+"3899-216c29b9/MyIC_Article121569.webp",soil:W+"3901-8a290d5a/%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%87.png",water:W+"3902-c8355e1a/%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87%206.png",air:W+"3903-e4481d9e/%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%BA%D8%A7%D8%B2%D8%A7%D8%AA1350.jpg",
+  s1:W+"3905-39c0aec8/%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%87.webp",s2:W+"3908-6d3cccaa/%D9%85%D8%A7%D9%8A%D9%83%D8%B1%D9%88.webp",s3:W+"3907-02776834/%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%BA%D8%A7%D8%B2%D8%A7%D8%AA1350.webp",s4:W+"3906-09835ef8/%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87%206.webp"};
+const SVCIMG={lab:W+"2589-2f28ffb6/%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D8%A8%D8%B1%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D9%8A.jpg?height=256",survey:W+"2587-e5ecac39/%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D8%A9.jpg?height=256",supervision:W+"2627-f61a2282/hd-construction-building-workers-site-background-image.jpg?height=256",design:W+"2585-a3e620c3/%D8%A7%D9%84%D8%AA%D8%B5%D8%A7%D9%85%D9%8A%D9%85%20%D9%88%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA.jpg?height=256"};
+
+/* ===================== ICONS ===================== */
+const I={
+ arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>',
+ pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
+ coin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>',
+ user:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>',
+ area:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7M3 3v7M21 21h-7M21 21v-7M3 3l7 7M21 21l-7-7"/></svg>',
+ tool:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>',
+ phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>',
+ mail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
+ eye:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+ send:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>',
+ flask:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 3h6M10 3v6L4.5 18.5A1.6 1.6 0 0 0 6 21h12a1.6 1.6 0 0 0 1.5-2.5L14 9V3"/><path d="M7 15h10"/><path d="M15 6c2-2 4-2 5-1-1 2-3 3-5 1z" fill="currentColor"/></svg>',
+ box:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8"/></svg>',
+ doc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H6v18h12V7zM14 3v4h4M9 13h6M9 17h6"/></svg>',
+ chat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>',
+ shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>',
+ clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+ chevL:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg>',
+ chevR:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5l7 7-7 7"/></svg>',
+};
+const SQ=c=>`<svg class="squiggle" viewBox="0 0 230 22" fill="none" stroke="${c}" stroke-width="5" stroke-linecap="round"><path d="M6 8 C60 4 160 4 224 7"/><path d="M70 16 C110 12 150 13 190 15" stroke-width="4"/></svg>`;
+
+/* ===================== VIEW HELPERS ===================== */
+const money=c=>`${c} ريال`;
+function pcard(p){
+  return `<article class="pcard reveal" data-cat="${p.cat}">
+    <div class="ph" tabindex="0" aria-label="${p.title}">
+      <img src="${IMG(p.id,0)}" alt="${p.title}" loading="lazy">
+      <span class="cat">${CATS[p.cat]}</span>
+      <span class="tap-hint">اضغط لعرض التفاصيل</span>
+      <div class="ov"><a class="btn" href="#/project/${p.id}">التفاصيل ${I.arrow}</a></div>
+    </div>
+    <div class="body">
+      <h3>${p.title}</h3>
+      ${p.client?`<div class="client">${p.client}</div>`:''}
+      <div class="meta"><span>${I.pin}${p.loc}</span><span>${I.coin}${money(p.cost)}</span></div>
+    </div>
+  </article>`;
+}
+function logoTiles(list){return list.map(([f,n])=>`<div class="logo-tile" title="${n}"><img src="assets/logos/${f}.png" alt="${n}"></div>`).join('')}
+function clientsSection(title,sub,bg=true){
+  const a=LOGOS.slice(0,14),b=LOGOS.slice(14);
+  return `<section class="${bg?'clients':''}"><div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">ثقة نعتز بها</span><h2>${title}</h2><p>${sub}</p></div></div>
+    <div class="marquee"><div class="track">${logoTiles(a)}${logoTiles(a)}</div><div class="track rev">${logoTiles(b)}${logoTiles(b)}</div></div>
+  </section>`;
+}
+const svcCard=(img,small,title,text,href,more="المزيد عن الخدمة",fb="")=>`<a class="svc reveal" href="${href}"><div class="pic"><img src="${img}" alt="${title}" loading="lazy" onerror="${fb?`this.onerror=null;this.src='${fb}'`:`this.style.display='none'`}"></div><small>${small}</small><h3>${title}</h3><p>${text}</p><span class="more">${more} ${I.arrow}</span></a>`;
+
+/* ===================== PAGES ===================== */
+function Home(){
+  const featured=["arafat-southasia","ranyah-municipality","taiseer-hotel","yanbu-hujjaj-city","dan-plaza","makkah-tourist-hotel"].map(id=>PROJECTS.find(p=>p.id===id));
+  return `
+  <section class="hero"><div class="bg mk"></div>
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--gold)">تنمية وازدهار · منذ 2002م</span>
+        <h1>شركة المهندس <em>جمال بكر حريري</em> للاستشارات الهندسية</h1>
+        <p class="lead">من قلب مكة المكرمة نقدّم حلولاً هندسية متكاملة — دراسةً وتصميماً وإشرافاً — لمشاريع حكومية وخاصة تخدم المجتمع وضيوف الرحمن، بخبرة مؤسسٍ تمتد لأكثر من 45 عاماً في المجال الهندسي.</p>
+        <div class="actions"><a class="btn solid" href="#/projects">استعرض مشاريعنا ${I.arrow}</a><a class="btn light" href="#/contact">تواصل معنا</a></div>
+        <div class="badge-row"><span class="badge"><i></i>مصنّف الدرجة الثانية – بلدي</span><span class="badge"><i></i>مرخّص من الهيئة السعودية للمهندسين</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">      <div class="stat-strip reveal">
+        <div class="stat"><b data-count="22">22+</b><span>عاماً في السوق السعودي</span></div>
+        <div class="stat"><b>3+</b><span>مليار ريال قيمة المشاريع</span></div>
+        <div class="stat"><b data-count="45">45+</b><span>عاماً خبرة المؤسس</span></div>
+        <div class="stat"><b data-count="27">27+</b><span>جهة حكومية وخاصة</span></div>
+      </div>
+</div>
+  <section><div class="wrap intro-grid">
+    <div class="intro-media reveal">
+      <img class="m1" src="assets/img/engineers.jpg" alt="مهندسون في الموقع">
+      <img class="m2" src="${IMG('sharif-mansour-hotel',0)}" alt="فندق وقف الشريف منصور">
+      <div class="tag"><b>2002</b><span>عام التأسيس – مكة المكرمة</span></div>
+    </div>
+    <div class="intro-text reveal">
+      <span class="eyebrow">من نحن</span>
+      <h2>خبرة هندسية تبني الثقة منذ أكثر من عقدين</h2>
+      <p>يُعد مكتب المهندس جمال بكر حريري أحد المكاتب الرائدة في مجال الاستشارات الهندسية بالمنطقة، ويقوم بدور متكامل في السوق السعودي مستنداً إلى الخبرة الواسعة لمؤسسه التي امتدت لأكثر من 45 عاماً في المجال الهندسي.</p>
+      <p>نخدم الجهات الحكومية والقطاع الخاص في مكة المكرمة والمشاعر المقدسة وخارجها، ونمتلك مختبراً بيئياً لتحليل المياه والتربة والهواء.</p>
+      <ul class="checks"><li>دراسات وتصاميم معمارية وإنشائية</li><li>إشراف على تنفيذ المشاريع</li><li>هندسة النقل وحركة المرور</li><li>رخص السكن الجماعي والتجاري</li></ul>
+      <a class="btn" href="#/about">تعرّف علينا أكثر ${I.arrow}</a>
+    </div>
+  </div></section>
+
+  <section class="pattern" style="background-color:#fbfaf6"><div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">ماذا نقدّم</span><h2>خدماتنا</h2><p>حلول هندسية عملية ومستدامة تغطي دورة حياة المشروع كاملة.</p></div>
+    <div class="svc-grid">
+      ${svcCard(SVCIMG.design,"حلول تصميمية عملية ومستدامة.","الدراسات والتصاميم","دراسات وتصاميم هندسية توازن بين المتطلبات الفنية والاقتصادية والبيئية.","#/projects?f=design","شاهد التصاميم",IMG('awda-hotel',0))}
+      ${svcCard(SVCIMG.supervision,"جودة في كل مرحلة.","الإشراف على التنفيذ","إشراف هندسي ميداني ومتابعة الجودة والالتزام بالجدول الزمني حتى التسليم.","#/projects?f=exec","شاهد المشاريع","assets/img/engineers.jpg")}
+      ${svcCard(SVCIMG.survey,"دقة في البيانات.","المساحة ونظم المعلومات الجغرافية","رفع مساحي وطبوغرافي وإعداد الخرائط وقواعد البيانات الجغرافية.","#/contact","اطلب الخدمة",IMG('yanbu-hujjaj-city',1))}
+      ${svcCard(SVCIMG.lab,"تحاليل معتمدة.","المختبر البيئي","تحاليل المياه والتربة والهواء والميكروبيولوجي بأجهزة حديثة ومعايير معتمدة.","#/envlab","زر المختبر","assets/img/glass.jpg")}
+    </div>
+    <div class="chips reveal"><span class="chip">إصدار رخص السكن الجماعي</span><span class="chip">إصدار الرخص التجارية</span><span class="chip">هندسة النقل وحركة المرور</span><span class="chip">الطرق والجسور والأنفاق</span><span class="chip">المياه والصرف الصحي</span><span class="chip">إدارة المشاريع الإنشائية</span></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">نبذة عن بعض المشاريع</span><h2>مشاريعنا</h2><p>اضغط على صورة أي مشروع ثم على «التفاصيل» لاستعراض بياناته وصوره.</p></div>
+    <div class="proj-grid">${featured.map(pcard).join('')}</div>
+    <div class="center"><a class="btn solid" href="#/projects">عرض جميع المشاريع (${PROJECTS.length}) ${I.arrow}</a></div>
+  </div></section>
+
+  ${clientsSection("عملاؤنا","فخورون بثقة الوزارات والهيئات والشركات التي رافقناها في مشاريعها.")}
+  `;
+}
+
+function Projects(q){
+  const f=q.get('f')||'all';
+  return `
+  <div class="banner"><div class="bg" style="background-image:url(${IMG('arafat-arab',0)})"></div><div class="wrap">
+    <div class="crumbs"><a href="#/">الرئيسية</a><span>/</span><span>مشاريعنا</span></div>
+    <h1>مشاريعنا</h1><p>من المشاعر المقدسة إلى الأبراج الفندقية والمباني الحكومية — محفظة مشاريع تتجاوز قيمتها 3 مليارات ريال.</p></div></div>
+  <section><div class="wrap">
+    <div class="filters" style="margin-top:0">
+      <button data-f="all" class="${f==='all'?'on':''}">الكل (${PROJECTS.length})</button>
+      <button data-f="exec" class="${f==='exec'?'on':''}">${CATS.exec} (${PROJECTS.filter(p=>p.cat==='exec').length})</button>
+      <button data-f="design" class="${f==='design'?'on':''}">${CATS.design} (${PROJECTS.filter(p=>p.cat==='design').length})</button>
+    </div>
+    <div class="proj-grid" id="pgrid">${PROJECTS.map(pcard).join('')}</div>
+  </div></section>`;
+}
+
+function Project(id){
+  const i=PROJECTS.findIndex(p=>p.id===id); if(i<0) return NotFound();
+  const p=PROJECTS[i], prev=PROJECTS[(i-1+PROJECTS.length)%PROJECTS.length], next=PROJECTS[(i+1)%PROJECTS.length];
+  const imgs=[...Array(p.n)].map((_,k)=>IMG(p.id,k));
+  const fact=(ic,l,v)=>v?`<div class="fact"><div class="ic">${ic}</div><div><small>${l}</small><b>${v}</b></div></div>`:'';
+  return `
+  <div class="pd-hero"><img src="${imgs[0]}" alt="${p.title}"><div class="wrap">
+    <div class="crumbs"><a href="#/">الرئيسية</a><span>/</span><a href="#/projects">مشاريعنا</a><span>/</span><span>${CATS[p.cat]}</span></div>
+    <span class="cat">${CATS[p.cat]}</span><h1>${p.title}</h1>${p.client?`<p style="font-size:19px;opacity:.9;margin-top:6px">${p.client}</p>`:''}
+  </div></div>
+  <section><div class="wrap">
+    <div class="pd-body">
+      <div class="desc reveal">
+        <span class="eyebrow">عن المشروع</span>
+        <h2 style="margin-top:8px">نظرة عامة</h2>
+        ${p.desc.map(t=>`<p>${t}</p>`).join('')}
+        ${imgs.length>1?`<div class="gallery">${imgs.map((s,k)=>`<button data-lb="${k}" aria-label="صورة ${k+1}"><img src="${s}" alt="${p.title} – صورة ${k+1}" loading="lazy"></button>`).join('')}</div>`:''}
+      </div>
+      <aside class="facts reveal">
+        <h3>بيانات المشروع</h3>
+        ${fact(I.user,"المالك / العميل",p.client)}
+        ${fact(I.pin,"الموقع",p.loc)}
+        ${fact(I.tool,"نوع الخدمة",p.role||CATS[p.cat])}
+        ${fact(I.area,"المساحة الإجمالية",p.area?p.area+" م²":"")}
+        ${fact(I.coin,p.cat==='design'?"التكلفة التقديرية":"التكلفة الإجمالية",money(p.cost))}
+        <a class="btn solid" href="#/contact?project=${encodeURIComponent(p.title)}">لديك مشروع مشابه؟ تواصل معنا</a>
+      </aside>
+    </div>
+    <div class="pd-nav">
+      <a href="#/project/${prev.id}"><img src="${IMG(prev.id,0)}" alt=""><div><small>المشروع السابق</small><b>${prev.title}</b></div></a>
+      <a class="next" href="#/project/${next.id}"><img src="${IMG(next.id,0)}" alt=""><div><small>المشروع التالي</small><b>${next.title}</b></div></a>
+    </div>
+  </div></section>`;
+}
+
+function About(){
+  const values=[["الشفافية","تحقيق الشفافية في جميع مراحل وإجراءات العمل لتحقيق أقصى درجات الكفاءة."],["المصداقية","المصداقية مع العملاء وإخبارهم بتفاصيل العمل أولاً بأول وعدم المماطلة."],["المسؤولية","القوة في تحمل مسؤولية القرارات والأفعال الصادرة عنا."],["الموثوقية","الشجاعة على الوفاء بالتزاماتنا دون استثناء."],["الجودة","نقدم لعملائنا أعلى معايير الجودة المعتمدة ونهتم بالتطوير المستمر."],["النزاهة","خلق بيئة عمل تنافسية وعادلة بين الموظفين وبناء جسور التواصل فيما بينهم."]];
+  const team=[["jamal","المدير العام والمؤسس","م. جمال بن بكر حريري","بكالوريوس هندسة مدنية – جامعة الملك سعود. شغل مناصب قيادية في أمانة العاصمة المقدسة، منها رئيس بلدية العمرة ثم العزيزية، ومدير عام مكتب أمين العاصمة المقدسة، ووكيل الأمانة للخدمات."],["samir","الإدارة العليا","م. سمير بن صالح أبو غلية","بكالوريوس هندسة مدنية – جامعة القاهرة، وماجستير هندسة مدنية – جامعة هاورد الأمريكية. مدير عام سابق للدراسات والإشراف والتصميم بأمانة العاصمة المقدسة."],["hatem","الإدارة العليا","م. حاتم بن سمير أبو غلية","بكالوريوس هندسة مدنية – جامعة أم القرى. مهندس سابق بالإدارة العامة للطرق، ونائب المدير العام في مكتب المهندس سمير أبو غلية للاستشارات الهندسية."],["tariq","الإدارة العليا","م. طارق بن جمال بكر حريري","بكالوريوس هندسة مدنية – جامعة أم القرى، وماجستير هندسة النقل والمرور – جامعة الملك عبدالعزيز. خبرة في التصميم الهندسي للطرق ومحاكاة النقل."]];
+  const exp=["الإشراف على تنفيذ مشاريع القرى بمكة المكرمة لصالح الإدارة العامة للطرق بأمانة العاصمة المقدسة","الإشراف على تنفيذ شبكات الري من البولي إيثيلين مع الخزانات لصالح الإدارة العامة للحدائق والمرافق","الإشراف على تنفيذ مشاريع الطرق – العقد رقم (60) بالإدارة العامة للطرق","الإشراف على تنفيذ المخططات الخاصة والاستثمارية ومخططات منح ولي العهد","الإشراف على تنفيذ مشاريع المجمع القروي بميسان","الإشراف على تنفيذ مشاريع بلدية محافظة الجموم وبلدية عسفان","إعداد الدراسات والتصميمات الفنية لتطوير مشروعات الطرق","دراسة وتصميم مبنى مجمع ميسان مع كراج ومبنى بلدية محافظة رنية","خدمات استشارية للمديرية العامة للشؤون الصحية بمنطقة مكة المكرمة","دراسة وتطوير المخطط العام لمدينة حجاج البحر بينبع (لصالح وزارة الحج)","دراسة وتطوير المخطط العام لمدينة حجاج البر بسلطانة بالمدينة المنورة","الإشراف على إنشاء مبنى فرع وزارة الحج والعمرة بمكة المكرمة","سفلتة وأرصفة وإنارة قرى مكة المكرمة وربط القرى التابعة للأمانة","تحسين وتجميل البلديات التابعة للأمانة (الجموم – عسفان – مدركة)"];
+  return `
+  <div class="banner"><div class="bg" style="background-image:url(assets/img/goals.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#/">الرئيسية</a><span>/</span><span>من نحن</span></div>
+    <h1>من نحن</h1><p>تنمية وازدهار — خبرة هندسية سعودية في خدمة مكة المكرمة وضيوفها منذ 2002م.</p></div></div>
+  <div class="wrap"><div class="cert reveal"><div class="seal">${I.shield}</div><div><h3>مصنّف الدرجة الثانية في تصنيف مقدمي خدمات المدن – قطاع المكاتب الهندسية</h3><p>شهادة صادرة عن وزارة الشؤون البلدية والقروية والإسكان (منصة بلدي)، إضافة إلى ترخيص مزاولة المهن الهندسية من وزارة التجارة والهيئة السعودية للمهندسين.</p></div></div></div>
+
+  <section><div class="wrap intro-grid">
+    <div class="intro-text reveal">
+      <span class="eyebrow">خبرة تمتد لأكثر من 22 عاماً</span>
+      <h2>مكتب سعودي رائد في الاستشارات الهندسية</h2>
+      <p>تأسس مكتب المهندس جمال بكر حريري للاستشارات الهندسية في مكة المكرمة عام 2002م، ويُعد من المكاتب الرائدة التي تقوم بدور متكامل في السوق السعودي، مستنداً إلى خبرة مؤسسه الممتدة لأكثر من 45 عاماً في المجال الهندسي وفي القيادة البلدية بأمانة العاصمة المقدسة.</p>
+      <p>أنجز المكتب على مدى أكثر من عقدين العديد من المشاريع الحكومية والخاصة، وأسهم في تطوير مشاريع المشاعر المقدسة والفنادق والمباني الخدمية والطرق، بقيمة إجمالية تتجاوز 3 مليارات ريال، مع التزام دائم بتقديم حلول ذات جودة عالية تواكب أفضل التقنيات.</p>
+    </div>
+    <div class="intro-media reveal">
+      <img class="m1" src="assets/img/tower.jpg" alt="">
+      <img class="m2" src="${IMG('ranyah-municipality',0)}" alt="مبنى بلدية رنية">
+      <div class="tag"><b>3+</b><span>مليار ريال قيمة المشاريع</span></div>
+    </div>
+  </div></section>
+
+  <section style="padding-top:0"><div class="wrap vm">
+    <div class="card v reveal"><div class="ic">${I.eye}</div><h3>الرؤية</h3><p>أن يكون مكتب جمال حريري الأكثر تميزاً في تقديم الخدمات الاستشارية الهندسية.</p></div>
+    <div class="card m reveal"><div class="ic">${I.send}</div><h3>الرسالة</h3><p>الارتقاء بخدمات استشارية مبتكرة ذات جودة عالية تسهم في تنمية المجتمع.</p></div>
+  </div></section>
+
+  <section class="pattern" style="background-color:var(--sand)"><div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">ما نؤمن به</span><h2>قيمنا</h2></div>
+    <div class="values">${values.map((v,k)=>`<div class="value reveal"><span class="n">0${k+1}</span><h4>${v[0]}</h4><p>${v[1]}</p></div>`).join('')}</div>
+  </div></section>
+
+  <section><div class="wrap"><div class="goals reveal"><div class="bg" style="background-image:url(assets/img/goals.jpg)"></div>
+    <div class="goals-grid"><div><span class="eyebrow" style="color:var(--gold)">إلى أين نتجه</span><h2>الأهداف</h2></div>
+    <ol><li>الوصول بمخرجات العمل الهندسي إلى أعلى درجات الجودة والدقة.</li><li>الدأب المستمر والحماس في العمل بما يحقق أكبر مستوى من النفع والجودة.</li><li>اختيار واستقطاب العناصر المميزة ذات الخبرة العلمية والعملية لتقديم أفضل الخدمات الهندسية.</li></ol></div>
+  </div></div></section>
+
+  <section id="services" class="pattern" style="background-color:#fbfaf6"><div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">مجالات العمل</span><h2>خدماتنا</h2></div>
+    <div class="svc-grid">
+      ${svcCard(SVCIMG.design,"","تصميم ودراسة المشاريع","دراسات وتصاميم معمارية وإنشائية للمباني الحكومية والفندقية والخدمية والمخططات العامة.","#/projects?f=design","أمثلة",IMG('makkah-tourist-hotel',0))}
+      ${svcCard(SVCIMG.supervision,"","الإشراف على المشاريع","إشراف هندسي على التنفيذ للطرق والمباني ومشاريع المشاعر المقدسة.","#/projects?f=exec","أمثلة","assets/img/engineers.jpg")}
+      ${svcCard(IMG('arafat-southasia',4),"","إصدار رخص السكن الجماعي والتجاري","إعداد متطلبات وإصدار رخص السكن الجماعي والرخص التجارية وفق الأنظمة المعتمدة.","#/contact","اطلب الخدمة")}
+      ${svcCard(IMG('yanbu-hujjaj-city',0),"","هندسة النقل وحركة المرور","دراسات المرور والنقل وتصميم الطرق وتطوير المخططات العامة لمدن الحجاج.","#/contact","اطلب الخدمة")}
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">السيرة الذاتية</span><h2>المؤسس والإدارة العليا</h2></div>
+    <div class="team">${team.map(t=>`<div class="member reveal"><div class="av"><img src="assets/team/${t[0]}.jpg" alt="${t[2]}"></div><small>${t[1]}</small><h4>${t[2]}</h4><p>${t[3]}</p></div>`).join('')}</div>
+  </div></section>
+
+  <section style="background:var(--sand)"><div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">كيف نعمل</span><h2>الهيكل التنظيمي</h2></div>
+    <div class="org reveal">
+      <div class="node">المدير العام</div><div class="v"></div>
+      <div class="row" style="padding-top:30px"><div><div class="node g">نائب المدير العام</div></div><div><div class="node g">مدير مكتب المدير العام</div></div></div>
+      <div class="v" style="height:40px"></div>
+      <div class="row"><div><div class="node s">قسم الدراسات والتصميم والإشراف</div></div><div><div class="node s">الشؤون الإدارية والمالية</div></div><div><div class="node s">قسم المساحة</div></div><div><div class="node s">قسم الإشراف على مشاريع الكهرباء</div></div></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head reveal"><span class="eyebrow">سابقة الخبرات</span><h2>من أعمالنا السابقة</h2><p>نماذج من العمليات التي نفذها المكتب أو شارك في تنفيذها.</p></div>
+    <ul class="exp reveal">${exp.map(e=>`<li>${e}</li>`).join('')}</ul>
+  </div></section>
+
+  ${clientsSection("شركاء النجاح","جهات حكومية وشركات رائدة رافقناها في مشاريعها.")}`;
+}
+
+function Contact(q){
+  const dept=q.get('dept')||'eng', proj=q.get('project')||'';
+  const d=(v,l)=>`<label><input type="radio" name="dept" value="${v}" ${dept===v?'checked':''}><span>${l}</span></label>`;
+  return `
+  <div class="banner"><div class="bg" style="background-image:url(assets/img/engineers.jpg)"></div><div class="wrap">
+    <div class="crumbs"><a href="#/">الرئيسية</a><span>/</span><span>تواصل معنا</span></div>
+    <h1>${dept==='jobs'?'انضم إلى فريقنا':'لنعمل معاً'}</h1><p>${dept==='jobs'?'نبحث دائماً عن الكفاءات الهندسية المميزة. أرسل لنا نبذة عنك وسنتواصل معك.':'أخبرنا بما تبحث عنه. سنلقي نظرة ونرى ما إذا كان هذا يمكن أن يكون بداية لشيء جميل.'}</p></div></div>
+  <section><div class="wrap contact-grid">
+    <div class="cinfo reveal">
+      <h2>معلومات التواصل</h2><p>فريقنا جاهز للرد على استفساراتك وطلباتك.</p>
+      <div class="citem"><div class="ic">${I.phone}</div><div><small>الرقم الموحد</small><b><a href="tel:920022275">920022275</a></b></div></div>
+      <div class="citem"><div class="ic">${I.mail}</div><div><small>البريد العام</small><b><a href="mailto:info@jbhconsulting.com.sa">info@jbhconsulting.com.sa</a></b></div></div>
+      <div class="citem"><div class="ic">${I.flask}</div><div><small>المختبر البيئي</small><b><a href="mailto:env.lab@jbhconsulting.com.sa">env.lab@jbhconsulting.com.sa</a></b></div></div>
+      <div class="citem" style="border:0"><div class="ic">${I.pin}</div><div><small>العنوان</small><b>مكة المكرمة – المملكة العربية السعودية</b></div></div>
+      <div class="socials">
+        <a href="#" aria-label="فيسبوك"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.5 2 10.6 3.5 10.6 6v2H8.5v3h2.1v11H14V11h2.6l.4-3z"/></svg></a>
+        <a href="#" aria-label="إكس"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.7 8 10.3h-6.3l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.8 3h6.4l4.5 5.9L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+        <a href="#" aria-label="لينكدإن"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg></a>
+      </div>
+    </div>
+    <form class="cform reveal" id="cform" novalidate>
+      <h2>أرسل رسالتك</h2><p>املأ النموذج وسيتواصل معك الفريق المختص.</p>
+      <div class="fgrid">
+        <div class="field full"><label>القسم</label><div class="dept">${d('eng','الاستشارات الهندسية')}${d('lab','المختبر البيئي')}${d('jobs','التوظيف')}${d('other','أخرى')}</div></div>
+        <div class="field"><label for="f1">الاسم الكامل</label><input id="f1" name="name" required placeholder="اكتب اسمك"></div>
+        <div class="field"><label for="f2">رقم الجوال</label><input id="f2" name="phone" type="tel" required placeholder="05xxxxxxxx" dir="ltr" style="text-align:right"></div>
+        <div class="field"><label for="f3">البريد الإلكتروني</label><input id="f3" name="email" type="email" placeholder="name@example.com" dir="ltr" style="text-align:right"></div>
+        <div class="field"><label for="f4">الجهة / الشركة</label><input id="f4" name="org" placeholder="اختياري"></div>
+        <div class="field full"><label for="f5">الموضوع</label><input id="f5" name="subject" value="${proj?('استفسار بخصوص: '+proj.replace(/"/g,'')):''}" placeholder="موضوع الرسالة"></div>
+        <div class="field full"><label for="f6">الرسالة</label><textarea id="f6" name="msg" required placeholder="أخبرنا عن مشروعك أو استفسارك..."></textarea></div>
+      </div>
+      <button class="btn solid" style="margin-top:22px" type="submit">إرسال ${I.send}</button>
+      <div class="sent" id="sent">شكراً لتواصلك! تم تجهيز رسالتك في بريدك الإلكتروني، أرسلها وسنعود إليك قريباً.</div>
+    </form>
+  </div></section>`;
+}
+
+function EnvLab(){
+  const slides=[["s4","تحاليل المياه","أجهزة تحليل المياه","قياس العناصر الكيميائية والبكتريولوجية في مياه الشرب والري للتأكد من مطابقتها للمواصفات القياسية."],["s1","تحاليل التربة","معدات فحص التربة","فحوصات فيزيائية وكيميائية لتركيب التربة تدعم قرارات الأساسات والزراعة والمشاريع الهندسية."],["s2","الميكروبيولوجي","مختبر الكائنات الدقيقة","تحليل دقيق للكائنات الدقيقة باستخدام أحدث الأجهزة ووفق المعايير المعتمدة."],["s3","الهواء والغازات","أجهزة رصد جودة الهواء","رصد ملوثات الهواء والغازات ومستويات الضوضاء بأجهزة عالية الدقة."]];
+  const labPartners=LOGOS.filter(([f])=>["mewa","momrah","makkah-muni","nwc","health","hajj","kidana","uqu","sec","makkah-dev","jabal-omar","sgs"].includes(f));
+  return `
+  <section class="lab-hero"><div class="bg"></div><div class="leaves"></div>
+    <div class="wrap lab-grid">
+      <div class="lab-copy reveal">
+        <span class="lab-tag">${I.flask} المختبر البيئي · منذ 2002م</span>
+        <h1>نحلل الماء والتربة والهواء<br><em>لمستقبلٍ أنقى 🌿</em></h1>
+        <p>امتداداً لخبرة شركة المهندس جمال بكر حريري للاستشارات الهندسية الممتدة لأكثر من 22 عاماً، نقدّم تحاليل بيئية دقيقة وموثوقة تدعم قراراتك الهندسية وتصنع بيئة أكثر استدامة.</p>
+        <div class="lab-actions"><a class="btn solid" href="#/envlab#lab-services">خدمات المختبر</a><a class="btn" href="#/contact?dept=lab">اطلب تحليلاً ${I.arrow}</a></div>
+        <div class="lab-contact">
+          <a href="mailto:env.lab@jbhconsulting.com.sa">${I.mail}<span>env.lab@jbhconsulting.com.sa</span></a>
+          <a href="tel:920022275">${I.phone}<span>920022275</span></a>
+        </div>
+      </div>
+      <div class="lab-tiles reveal">
+        ${[["water","💧","تحاليل المياه","مياه الشرب والري"],["soil","🪨","تحاليل التربة","الخصائص الفيزيائية والكيميائية"],["air","🌫️","الهواء والغازات","الملوثات والضوضاء"],["micro","🦠","الميكروبيولوجي","الكائنات الدقيقة"]].map(t=>`<a class="lab-tile" href="#/envlab#lab-services"><img src="${LABIMG[t[0]]}" alt="" onerror="this.remove()"><span class="ico">${t[1]}</span><b>${t[2]}</b><small>${t[3]}</small></a>`).join('')}
+      </div>
+    </div>
+  </section>
+
+  <section id="lab-services"><div class="wrap">
+    <div class="sec-head reveal"><h2>خدماتنا</h2>${SQ('#4f9a53')}</div>
+    <div class="svc-grid">
+      ${svcCard(LABIMG.micro,"تحليل الكائنات الدقيقة.","قسم الميكروبيولوجي","تحليل دقيق للكائنات الدقيقة باستخدام أحدث الأجهزة ووفق المعايير المعتمدة.","#/contact?dept=lab")}
+      ${svcCard(LABIMG.soil,"تقييم خصائص التربة وجودتها.","تحاليل التربة","فحوصات فيزيائية وكيميائية لتركيب التربة تدعم الأساسات والزراعة والمشاريع الهندسية.","#/contact?dept=lab")}
+      ${svcCard(LABIMG.water,"تحليل شامل لمياه الشرب والري.","تحاليل المياه","قياس العناصر الكيميائية والبكتريولوجية في مياه الشرب والري.","#/contact?dept=lab")}
+      ${svcCard(LABIMG.air,"قياس جودة الهواء والغازات والضوضاء.","الهواء والغازات والضوضاء","أجهزة عالية الدقة لرصد ملوثات الهواء والغازات ومستويات الضوضاء.","#/contact?dept=lab")}
+    </div>
+  </div></section>
+
+  <section class="lab-band"><div class="wrap about-lab">
+    <div class="reveal">
+      <span class="eyebrow">عن المختبر</span>
+      <h2>خبرة هندسية وبيئية تحت سقف واحد</h2>
+      <p>انطلق المختبر البيئي امتداداً لخبرة شركة المهندس جمال بكر حريري للاستشارات الهندسية الممتدة منذ عام 2002م، ليقدّم للجهات الحكومية والشركات والأفراد تحاليل بيئية دقيقة للمياه والتربة والهواء.</p>
+      <p>نربط نتائج المختبر بالخبرة الهندسية للشركة، فتصبح التحاليل أداة عملية لاتخاذ القرار في التصميم والإشراف وحماية البيئة.</p>
+      <ul class="checks"><li>نتائج دقيقة وفق المواصفات القياسية</li><li>أجهزة ومعدات حديثة</li><li>فريق فني متخصص</li><li>تقارير واضحة وسريعة</li></ul>
+      <a class="btn solid" href="#/contact?dept=lab">ابدأ الآن ${I.arrow}</a>
+    </div>
+    <div class="collage reveal">
+      <img class="a" src="${LABIMG.s1}" alt="تحاليل التربة" onerror="this.style.visibility='hidden'">
+      <img class="b" src="${LABIMG.water}" alt="تحاليل المياه" onerror="this.style.visibility='hidden'">
+      <img class="c" src="${LABIMG.s2}" alt="الميكروبيولوجي" onerror="this.style.visibility='hidden'">
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head reveal"><h2>الأجهزة والمعدات</h2>${SQ('#4f9a53')}</div>
+    <div class="slider reveal" id="slider">
+      ${slides.map((s,k)=>`<div class="slide ${k?'':'on'}"><img src="${LABIMG[s[0]]}" alt="${s[2]}" loading="lazy"><div class="txt"><small>${s[1]}</small><h3>${s[2]}</h3><p>${s[3]}</p><a class="btn" href="#/contact?dept=lab">تواصل معنا</a></div></div>`).join('')}
+      <button class="arr p" aria-label="السابق">${I.chevR}</button><button class="arr n" aria-label="التالي">${I.chevL}</button>
+      <div class="dots">${slides.map((_,k)=>`<button class="${k?'':'on'}" aria-label="شريحة ${k+1}"></button>`).join('')}</div>
+    </div>
+  </div></section>
+
+  <section class="lab-band"><div class="wrap">
+    <div class="sec-head reveal"><h2>كيف تطلب التحليل؟</h2>${SQ('#4f9a53')}</div>
+    <div class="steps">
+      <div class="step reveal"><div class="ic">${I.chat}</div><h4>تواصل معنا</h4><p>أخبرنا بنوع العينة والتحاليل المطلوبة عبر نموذج التواصل أو الهاتف.</p></div>
+      <div class="step reveal"><div class="ic">${I.box}</div><h4>جمع العينات</h4><p>نوضح لك طريقة أخذ العينات وحفظها، أو نتولى جمعها من الموقع.</p></div>
+      <div class="step reveal"><div class="ic">${I.flask}</div><h4>التحليل المخبري</h4><p>تُحلَّل العينات بأجهزة حديثة ووفق المواصفات القياسية المعتمدة.</p></div>
+      <div class="step reveal"><div class="ic">${I.doc}</div><h4>استلام التقرير</h4><p>تقرير واضح بالنتائج ومقارنتها بالحدود المسموحة وتوصيات عند الحاجة.</p></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="sec-head reveal"><h2>شركاء النجاح</h2>${SQ('#4f9a53')}</div>
+    <div class="logo-grid">${logoTiles(labPartners)}</div>
+  </div></section>`;
+}
+function NotFound(){return `<section><div class="wrap" style="text-align:center;padding:80px 0"><h1 style="font-size:60px;color:var(--maroon)">404</h1><p>الصفحة غير موجودة.</p><a class="btn" href="#/" style="margin-top:20px">العودة للرئيسية</a></div></section>`}
+
+/* ===================== ROUTER ===================== */
+const app=document.getElementById('app');
+function route(){
+  let h=location.hash.replace(/^#/,'')||'/';
+  if(!h.startsWith('/')){ const el=document.getElementById(h); if(el){el.scrollIntoView({behavior:'smooth'});} return; }
+  let anchor='';const ai=h.indexOf('#');if(ai>-1){anchor=h.slice(ai+1);h=h.slice(0,ai)}
+  const [path,qs]=h.split('?'); const q=new URLSearchParams(qs||'');
+  const seg=path.split('/').filter(Boolean);
+  let html,key=seg[0]||'home';
+  if(key==='home') html=Home();
+  else if(key==='projects') html=Projects(q);
+  else if(key==='project') {html=Project(seg[1]);key='projects'}
+  else if(key==='about') html=About();
+  else if(key==='contact') {html=Contact(q); if(q.get('dept')==='jobs') key='jobs'}
+  else if(key==='envlab') html=EnvLab();
+  else html=NotFound();
+  document.body.classList.toggle('lab',key==='envlab');
+  app.innerHTML=html;
+  document.querySelectorAll('nav.main a[data-r]').forEach(a=>a.classList.toggle('active',a.dataset.r===key));
+  document.body.classList.remove('menu-open');
+  window.scrollTo({top:0,behavior:'instant'});
+  const titles={home:'الرئيسية',projects:'مشاريعنا',about:'من نحن',contact:'تواصل معنا',jobs:'انضم إلينا',envlab:'المختبر البيئي'};
+  document.title=(titles[key]||'')+' | جمال بكر حريري للاستشارات الهندسية';
+  wire(q);
+  if(anchor){const el=document.getElementById(anchor);if(el)setTimeout(()=>el.scrollIntoView({behavior:'smooth'}),60)}
+}
+function wire(q){
+  // reveal
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  // project cards: tap to reveal details button (touch), click elsewhere on image
+  document.querySelectorAll('.pcard .ph').forEach(ph=>{
+    ph.addEventListener('click',e=>{
+      if(e.target.closest('.btn')) return;
+      const was=ph.classList.contains('active');
+      document.querySelectorAll('.pcard .ph.active').forEach(x=>x.classList.remove('active'));
+      if(!was) ph.classList.add('active');
+    });
+    ph.addEventListener('keydown',e=>{if(e.key==='Enter'){location.hash=ph.querySelector('.btn').getAttribute('href')}});
+  });
+  // filters
+  const grid=document.getElementById('pgrid');
+  if(grid){
+    const apply=f=>{document.querySelectorAll('.filters button').forEach(b=>b.classList.toggle('on',b.dataset.f===f));
+      grid.querySelectorAll('.pcard').forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none')};
+    document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>apply(b.dataset.f));
+    apply(q.get('f')||'all');
+  }
+  // gallery lightbox
+  const gal=[...document.querySelectorAll('.gallery button')];
+  if(gal.length){const srcs=gal.map(b=>b.querySelector('img').src);gal.forEach(b=>b.onclick=()=>openLB(srcs,+b.dataset.lb))}
+  // slider
+  const sl=document.getElementById('slider');
+  if(sl){let i=0;const s=sl.querySelectorAll('.slide'),d=sl.querySelectorAll('.dots button');
+    const go=n=>{i=(n+s.length)%s.length;s.forEach((x,k)=>x.classList.toggle('on',k===i));d.forEach((x,k)=>x.classList.toggle('on',k===i))};
+    sl.querySelector('.p').onclick=()=>go(i-1);sl.querySelector('.n').onclick=()=>go(i+1);d.forEach((b,k)=>b.onclick=()=>go(k));
+    clearInterval(window._sl);window._sl=setInterval(()=>{if(document.getElementById('slider'))go(i+1);else clearInterval(window._sl)},6000);}
+  // contact form -> mailto
+  const f=document.getElementById('cform');
+  if(f){f.onsubmit=e=>{e.preventDefault();
+    if(!f.name.value.trim()||!f.phone.value.trim()||!f.msg.value.trim()){[f.name,f.phone,f.msg].forEach(x=>x.style.borderColor=x.value.trim()?'':'#c0392b');return}
+    const dep=f.dept.value, to=dep==='lab'?'env.lab@jbhconsulting.com.sa':'info@jbhconsulting.com.sa';
+    const lbl={eng:'الاستشارات الهندسية',lab:'المختبر البيئي',jobs:'التوظيف',other:'أخرى'}[dep];
+    const body=`الاسم: ${f.name.value}\nالجوال: ${f.phone.value}\nالبريد: ${f.email.value}\nالجهة: ${f.org.value}\nالقسم: ${lbl}\n\n${f.msg.value}`;
+    location.href=`mailto:${to}?subject=${encodeURIComponent(f.subject.value||('تواصل – '+lbl))}&body=${encodeURIComponent(body)}`;
+    document.getElementById('sent').style.display='block';}}
+}
+/* lightbox */
+const lb=document.getElementById('lb');let LBS=[],LBI=0;
+function openLB(s,i){LBS=s;LBI=i;showLB();lb.classList.add('on');document.body.style.overflow='hidden'}
+function showLB(){lb.querySelector('img').src=LBS[LBI];lb.querySelector('.cnt').textContent=`${LBI+1} / ${LBS.length}`}
+function closeLB(){lb.classList.remove('on');document.body.style.overflow=''}
+lb.querySelector('.x').onclick=closeLB;
+lb.querySelector('.pv').onclick=()=>{LBI=(LBI-1+LBS.length)%LBS.length;showLB()};
+lb.querySelector('.nx').onclick=()=>{LBI=(LBI+1)%LBS.length;showLB()};
+lb.onclick=e=>{if(e.target===lb)closeLB()};
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')lb.querySelector('.nx').click();if(e.key==='ArrowRight')lb.querySelector('.pv').click()});
+/* header */
+document.getElementById('burger').onclick=()=>document.body.classList.toggle('menu-open');
+addEventListener('scroll',()=>document.getElementById('hdr').classList.toggle('scrolled',scrollY>10),{passive:true});
+document.getElementById('yr').textContent=new Date().getFullYear();
+addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
